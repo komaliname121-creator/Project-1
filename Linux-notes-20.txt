@@ -1,0 +1,1227 @@
+
+
+		[rohit@localhost ~]$ 		=> prompt
+		rohit 				=> Local Logged In user
+		@ 				=> separator/divider
+		localhost			=> machine/system name
+		~ 
+		$				=> indicate we logged as Local user 
+
+		[root@localhost ~] #		=> Super User logged Logged In
+		
+		# useradd username
+		# useradd aniket		=> to add new local user
+	
+		# passwd Aniket			=> to set new password
+
+		[rohit ]$  su - Aniket		=> ask password
+		[root ] # su - Aniket 		=> not ask password
+		# 				=> Super User(root)
+		$				=> Local user(Aniket,rohit)
+
+               
+                # userdel username
+                # userdel Aniket                => to remove local user
+
+                # userdel -r username
+                # userdel -r Aniket             => to remove local user + home directory
+
+
+
+		Computers
+	
+	PC			server
+	Lap,computer		Server
+	Bike 			Train
+				Capacity,speed,usrs,
+				strength . etc...
+	---------------------------------
+	OPERATING SYSTEM - OS SOFTWARE- PC - LIVE
+
+		OS
+	
+	Computer	Mobile
+	----------------------
+	Window		Android
+	Linux		Ios-Iphone
+	Mac		Symbian
+			Mayaos
+	------------------------
+	
+		 COMPUTER
+
+	PC			SERVER
+
+	WINDOWS - 90%		WINDOWS - 5%
+	LINUX - 3%		LINUX   - 90%
+	MAC - 7%		OTHER   - 5%
+
+===================================================
+	1969 - Dennis Ritchie , Ken Thompson
+	Unix - OS - s/w
+	1.Business purpose -  
+	2. Paid
+	3. Coding - close source
+	4. Secure + Popular
+	------------------
+	1983 - Richard Stallman - GNU Project
+	Activist - moments 
+	GNU - Gnu not Unix - 
+	Purpose : 
+	S/w free to use, Free to study , Modify (Opensource) , Public , Common People.
+	FSF- Free software foundation - 
+	Community - team 
+	OS x - 
+	------------------
+	1991 - 21 year - Linus Torvalds
+	Kernal -  Os. s/w heart
+
+	Linux/GNU - Open source -> Modify , Os launch.
+
+			Linux - code 10K
+	
+	Debian		Red hat 	
+	Free		Coperate/Business (Paid)
+	PC		Servers:
+			
+	Ubuntu		Redhat
+	Kali 		Free : Centos,Rocky , Alma
+	Parrot
+	
+	server :
+	
+	Ubuntu ser
+
+=================================
+12 Jun 2026
+
+
+mkdir demo1		=> to create 1 dir/folder
+mkdir demo2 demo3	=> to create 2 dir
+mkdir demo{4..100}	=> to create multiple dir
+mkdir {a..z}		=> to create a to z dir
+mkdir "Aniket mapari"	=> to create two word dir
+
+ls 			=> list contents
+clear 			=> clear terminal
+
+---------------------
+rmdir demo1 		=> to delete 1 dir
+rmdir demo2 demo3	=> to delete 2 dir
+rmdir demo{4..50}	=> to delte multiple dir
+rmdir {a..z}		=> to delete {a..z} dir
+rmdir "Aniket mapari" 	=> to delete 2 word dir
+
+date 			=> full date
+date +%d		=> only date (12)
+date +%m
+date +%y
+date +%Y
+date +%D
+date +%H
+date +%M
+date +%S
+
+=======================
+15 Jun 
+
+FILES = create , remove , cp ,move ,rename , 
+read , write
+
+TO CREATE :
+
+$# touch file1		=> to create single file
+#$ touch file2 file3	=> to create 2 files
+#$ touch file{4..50}	=> to create multiple file
+#$ touch {a..z}		=> to create a to z file.
+#$ touch "Aarush sonav"	=> to create 2 word file
+
+------------
+TO REMOVE/DELETE:
+
+#$ rm file1 		=> to remove single file
+#$ rm file2 file3	=> to remove 2 files
+#$ rm file{4..50}	=> to remove multiple file
+#$ rm {a..z}		=> to remove a to z file.
+#$ rm "Aarush sonav"	=> to remove 2 word file
+
+
+------------
+
+TO COPY :
+
+#$ cp source destination	
+#$ cp file1 demo		=> copy file1 into demo
+
+#$ cp file{1..10} demo		=> copy 10 files into demo
+
+------------
+
+TO MOVE/CUT :
+
+#$ mv source destination	
+#$ mv file1 demo		=> move/cut file1 into demo
+
+#$ mv file{1..10} demo		=> move 10 files into demo
+
+-------------
+
+
+TO RENAME: we can only rename one file at time.
+
+#$ mv oldname newname		=> to rename
+
+--------------
+
+TO READ:
+
+#$ cat filename		=> contain of file
+#$ cat file100		=> contain of file100
+
+--------------
+
+TO WRITE :
+
+#$ echo "Hello World"	=> only print	
+
+
+#$ echo "Hello world" > file100		=> write HW in file100
+
+#$ cat file100
+
+
+16 Jun 2026
+
+
+	#$ echo "HW" 		=> print jase che tase
+	#$ echo "HW" > file	=> file madhe jase che tase lihle jate.	new data add old 				   delete hoto.
+	#$ echo "HW" >> file	=> juna data tasa ch rahta , new data add hoto.
+
+	#$ man ls		=>  manual of ls command(info)
+	#$ man ls > file3	=>  we write info of ls command in file3 q			#$ head			=> top 10 line of file
+	#$ head -n 15 file3	=> top 15 lines
+	#$ tail 		=> bottom/last 10 lines
+	#$ tail -n 11 file3	=> bottom/last 11 lines
+	#$ more file3		=> file reading mode open(%)	exit- q
+	#$ less file3		=> file reading mode open 
+
+
+	-----------
+	#$ free			=> memory (ram)
+	#$ free -h -k -m -g	
+
+	man - info about command
+
+	#$ man ls
+	#$ man mkdir
+	#$ man rmdir
+
+	info - info about command
+
+	#$ info ls
+	#$ info mkdir
+	#$ info rmdir
+	
+	--------
+	ls --help		=> option info
+	mkdir --help		=> option 	
+	
+================================================
+
+	Folder /dir - create,delete,move,copy, rename
+	date option
+	cal option
+	File - create , remove,move ,copy,rename, write , read
+	
+
+	ls 	=> list contents
+	ls -l	=> alphabetical order
+	ls -ltr => list timewise
+	ls -a 	=> hidden & visible content (files,folders)
+	lscpu	=> cpu processor details
+	lspci	=> devices details - pci = peripheral connectivity interface(devices)
+	lsusb	=> usb details
+
+-------------------------------------------------------
+
+	whoami 		=> loggedIn username
+	uname		=> Kernal name(Linux)
+	uname -a	=> Kernal details
+
+	shutdown	=> shutdown after 1 min
+	shutdown -c	=> to cancle shutdown
+	shutdown now	=> to shutdown now
+	reboot		=> to restart machine
+=====================================================
+
+
+	20 Jun 2026
+
+	2 . Editors - File write operation
+	In Linux everything is file & folder(file).
+
+	GUI  - Graphical User Interface 
+	CLI  - Command Line Interface 
+
+	------------
+	Windows - GUI -
+	Notepad, sublime,vscode,wordpad,msword
+
+	Linux 
+	GUI - TextEditor,Libreoffice
+	CLI - nano , vi, vim
+-----------------------------------
+	#$ nano file1		=> to create and edit file using nano.
+	Ctrl + O		=> Write out
+	Ctrl + X		=> Exit
+	#$ cat file1		=> Read the contains of file1
+----------------------------------------
+	#$ vi file4		=> to create and edit file using vi editor.
+	i			=> Insert mode
+	esc			=> Escape from Insert mode
+	:wq			=> write & Quite
+	
+	#$ cat file4		=> Read the contains of file4
+	
+---------------------------------------
+	VIM : 4 modes
+	1. Command Mode
+	2. Insert Mode
+	3. Execution mode
+	4. Visual Mode
+----------------------
+	1. Command Mode:
+		i 	=> insert mode
+		esc	=> mode chya baher yeto.
+		:wq	=> write & quite 	
+		gg	=> top la jate
+		G	=> bottom la jate		
+
+		yy 	=> 1 line copy
+		10yy	=> 10 line copy
+
+		p	=> paste - cursor chya khali
+		P	=> paste - cursor chya var
+		dd	=> delete single line
+		20dd	=> delete 20 lines
+		dw	=> delete word
+		u	=> undo (return changes)
+
+2. Insert Mode
+		i	=> insert mode madhe janya sathi
+		I	=> Line chya start la janya sathi
+		A	=> Line chya last la janya sathi
+		O	=> create new line above the cursor
+		o 	=> create new line below the cursor
+
+3. Execution Mode
+
+		:wq	=> write & quite
+		:w	=> only write
+		:q 	=> only quite
+		:w! 	=> forcefully write
+		:q!	=> forcefully quite
+		:set nu	=> set number
+		:set nonu	=> remove number	
+		:/word		=> search
+		:nohl		=> no highlight
+4. Visual Mode - reading mode
+		v	=> visual mode
+		esc	=> exit from visual mode
+		arrow	=> scroll 
+=========================================================
+26 Jun 
+	3. User & Group Management
+
+
+	Linux - Multiuser os.
+	
+	3 Users 
+	1. Super User(root) - Only one - 0 
+	2. Local User (Rohit,aarush,komal) - multiple - 1001
+	3. Service User(tools,s/w) - multiple 
+--------------------------
+
+		2. Local User (Rohit,aarush,komal) - multiple
+
+	# useradd user1 	=>to add new user
+	# passwd user1		=> to set new password
+	# userdel user1		=> delete only user
+	# userdel -r user1	=> delete user + home dir
+
+	------------------------
+	When you add new local user :
+	8 change/entries:
+	
+	1. uid & gid - /etc/passwd
+	2. home dir create - /home
+	3. /etc/passwd
+	4. /etc/shadow
+	5. /etc/group
+	6. /etc/gshadow
+	7. /etc/skel/ file copy user home dir
+	8. /var/spool/ create new file for user
+	9. Usermod - userdetails update
+	10. Groupmod - groupdetails update
+
+-----------------------------------------------
+	/etc/passwd
+	
+	username:x:uid:gid:comment:homedir:shell
+		
+	user1: x : 1010 : 1010 : : /home/user1 : /bin/bash
+
+	# useradd -u userid username		=> add user with uid
+	# useradd -u 1013 user3		
+
+	# useradd -g gid username		=> add user with gid
+	# useradd -g 1009 user4	
+
+	# useradd -c "Java Dev" user5		=> add user with comment
+
+	# useradd -d /home/dirname user6	=> add user with different home dir.
+	# useradd -d /home/Akanksha user6	
+	
+	# useradd -s /sbin/nologin username	=> add user with shell
+							(/bin/bash , /sbin/nologin)
+
+	# useradd -u 1019 -g 1009 -c "Comment" -d /home/gita -s /sbin/nolgoin user7
+	
+------------------------------------
+
+	4. /etc/shadow  - Credentials - account,password etc.. related kaam kele jata.
+
+	# cat /etc/shadow 		=> to check users.
+
+	# chage -l kartik		=> to check account details
+
+	# chage -m 2 kartik		=> minimum days set 
+					2 diwasapahile password change karta yenar nahi	
+	# chage -M 10 kartik		=> Maximum days set
+					Mhanje tumcha password tya 10 diwasparynt valid asel
+
+	# chage -W 5 kartik		=> to set warning -> 5 days pahile warning yetil
+	
+	# chage -E "12 Aug" kartik	=> to set Account expire(Not allow login)
+	# chage -I 5 Kartik		=> to set Inactive days (5 diwas password ankhi chalel)
+
+	# date -s "12 Aug 2026"		=> date change
+	# date -s "10:20 PM"		=> time change
+	# date -s "12 Aug 2026 10:20 PM" => date & time changes
+
+=================================================
+	1 Jul 2026
+
+	5. /etc/group  - groupname: x : gid : members
+	6. /etc/gshadow- groupname : password: Admin : members
+
+	# cat/tail /etc/group
+	# cat/tail /etc/gshadow
+	
+	# groupadd grouname		=> to create a group
+	# groupadd Codingwale
+
+	# gpasswd Codingwale		=> to set new password to group
+
+	# groupadd -g 1014 Linux	=> Add new group with gid
+	
+	# gpasswd -a komal Linux	=> Add Single user to group
+	# gpasswd -M rohit,kartik Linux	=> Add Multiple users to group
+					(note: old user will be removed)
+
+
+	# gpasswd -A komal Linux	=> to assign admin
+	# gpasswd -A '' Linux		=> to remove admin	
+
+	# gpasswd -d rohit Codingwale	=> to remove a single user from group
+-----------------------------------------------------------------------
+
+	8. /var/spool/ create new file for user
+
+Check if Postfix is installed
+
+#$ rpm -q postfix
+
+If it's not installed:
+
+# yum install postfix -y
+
+Start and enable Postfix
+# systemctl enable postfix
+
+# systemctl start postfix
+
+Send an email
+
+If you have the mail command installed:
+
+Only root can send mail :
+
+# echo "Test email body" | mail -s "Test Subject" Rohit
+
+Sai to Rohit:
+
+sai $  echo "Test email body" | mail -s "Test Subject" Rohit@localhost.localdomain
+
+----------------
+
+How to change - machine , hostname ?
+
+# hostnamectl set-hostname newhostname
+
+-------------------------------------------------------
+
+
+	9. Usermod - userdetails update - /etc/passwd 	
+		# usermod -l newname oldname	=> rename user
+		# usermod -u uid username	=> to update uid
+		# usermod -g gid username	=> to update gid
+		# usermod -c "Comment" username	=> to update comment
+	# usermod -d /home/aarush1 Aarush	=> to update home dir
+	# usermod -u 1001 -g 1001 -c "Comment" -d /home/Aarush Aarush => All in One update user details
+		
+	10. Groupmod - groupdetails update  - /etc/group, /etc/gshadow
+	
+	# groupmod -n newname oldname		=> rename group
+	# groupmod -g gid groupname		=> to update gid
+
+----------------------------------------------------------------
+
+	4. LINUX FILES PERMISSION & SECURITY
+
+	In Linux everything is File.
+	Even Folder/dir also file.
+	----------------
+	#$ ls 		=> list content(only name)
+	
+	#$ ls -l	=> list (alpha)
+	
+	#$ ls -ltr	=> list (date&timewise)
+	
+	------------------------------------------------
+
+	-PERMIS    Lc user group sz Month date time filename
+
+	-rwxrwxrwx 1 rohit rohit 0 Month date time  file1
+
+	drwxrwxrwx 1 rohit rohit 0 Month date time  Sample1
+	
+	------------------------------
+	1. File type (-/d)
+		2 types of file:
+
+		User define 
+		1. normal file (-) - touch
+		2. directory (d) - mkdir 
+		3. Link file (l) 
+			1. soft link - 	
+				#$ ln -s originalfile linkname
+				#$ ln -s aws link1
+				Note : original file delete - link not work
+			2. hard link
+				#$ ln originalfile linkname
+				#$ ln azure link2
+				Note : original file delete- link will work
+		
+		System define (Linux)
+		1. Block device
+		2. Character device
+		3. Socket 
+		4. Pipe
+
+
+	2. File Permission (RWX)
+	3. Link Count
+
+        4. USER & GROUP
+	5. Size
+	6. Date and Time
+	7. Filename
+
+
+
+
+	3. Link Count - Only count the sub directories.
+			File count not consider.
+	File -1
+	Dir  -2
+	
+	4. USER & GROUP
+
+	# chown newuser file/folder
+	# chown komal file1
+	# chown Aarush demo1
+
+	# chgrp groupname file/folder
+	# chgrp devops-vp file1
+	# chgrp devops-vp demo2
+
+	Change Owner & Group at time :
+
+	# chown newuser:groupname file/folder
+	# chown Aarush:aarush demo2
+	# chown Rohit:Rohit file1
+	
+	
+	# chown -R Aarush: Aarush demo2 	=> change owner & grp demo2 
+						as well as subdirectories and files.
+						-R - recursively - tyachya aat madhe
+
+
+----------------------------------------------------------------------
+
+	-rwxrwxrwx 1 rohit rohit 0 Month date time  file1
+	
+	Permission : (rwx)
+	
+	Own 	Group 	Other
+	rwx	rwx	rwx
+
+	PERMISSION 2 WAYS SET KARTA YETA:
+	
+	1. BEFORE FILE CREATE 
+	2. AFTER FILE CREATE :
+	
+	+ 	=> add permission
+	-	=> remove permission
+
+	u 	=> Owner/User
+	g 	=> group
+	o 	=> other user
+	a 	=> all
+
+
+	# chmod u+x file1 	=> add execute permission to file1
+	# chmod u-rw file1 	=> remove read & write permission to file
+	
+	# chmod g+rw file1	=> to add rw permission to group  
+	# chmod g-wx file1	=> to remove wx to group of file1
+	
+	# chmod o+rwx file1	=> to add rwx to other user of file1
+
+	# chmod a+rwx file2	=> to add same permission
+	
+	# chmod u+rwx,g+rw,o+r	=> to add different permission
+
+	-------------------------------------------
+	
+	r  w  x
+	4  2  1
+	
+	7  	7	7 
+	rwx	rwx	rwx
+
+	4	1	5
+	r--     --x    r-x
+
+	
+	4	6	3
+	r-- 	rw- 	-wx
+	
+
+
+	3 1 5
+	
+	r w x
+	4 2 1
+
+	-wx --x r-x
+	
+	-------------------
+
+	r w x
+	4 2 1
+
+
+	0 2 2
+
+	--- -w- -w-
+
+	13 July 2026
+
+	1. BEFORE FILE CREATE 
+
+	rwx
+	
+	Full Permission
+	File - 666 => rw- rw- rw-
+	Dir - 777  => rwx rwx rwx
+	umask = 022
+	------------
+
+	new permission = full permission - umask (minus permission)
+	
+	touch file1
+	
+	permission = 666 - 022
+		   = rw- rw- rw- - --- -w- -w-
+		   = rw- r-- r--
+-----------------------------------------
+
+	umask - 3 1 2 - 
+	new_per = rw- rw- rw- (-) -wx --x -w-
+		= r-- rw- r--   
+
+----------------------------------------------
+
+	umask - 4 2 6 
+	new per = rw- rw- rw-  
+		  r-- -w- rw-
+		------------------		
+		  -w- r-- ---
+
+	umask - 3 4 2
+	new per = rw- rw- rw-
+		  -w- r-- -w-
+		---------------
+		  r-- -w- r--
+===============================================
+
+	umask -	1 0 0 
+	new per = rw- rw- rw-
+		  --- --- ---
+		----------------
+		  rw- rw- rw-
+
+---------------------------------------------
+	getfacl & setfacl
+	
+	Get/Set file access control list
+	
+	---
+
+	# getfacl file1			=> to get more detail info about file1
+	
+	Add user and group :
+
+	# setfacl -m u:rohit:rwx file1
+	# setfacl -m g:linux-vp:rwx file1
+
+	Remove user and group:
+	# setfacl -x u:rohit:rwx file1
+	# setfacl -x g:linux-vp:rwx file1
+
+	Remove all :
+	# setfacl -b file1
+
+
+===========================================================
+
+
+	5. File Archiving & Compression
+	
+	Problem : We cannot share folder over network(internet).
+
+	Archiving - Normal folder convert into single file.
+
+	Problem - File size reduce - Compression
+
+	-----------------
+
+	Tool - tar , zip 
+
+	tar - taped archive 
+	
+	c - create 	v - verbose 	f - file
+
+	# tar -cvf newfile.tar originaldir
+	# tar demo.tar demo
+
+	t - for Read
+ 
+	# tar -tvf tarfile.tar
+	# tar -tvf demo.tar
+
+	Extract - tar file convert into normal folder/dir
+
+	# tar -xvf tarfile.tar		=> convert your tar file into normal dir.
+	# tar -xvf demo.tar		
+
+
+
+
+
+
+	# tar -cf etc.tar etc 		=> to archive
+
+	# tar -tf etc.tar		=> to read tar file
+
+	# tar -xf etc.tar		=> to extract
+
+	------------
+	Compression : reduce size of tar file.
+
+	1. gzip (z) - .gz
+
+	# tar -czf etc.tar.gz etc.tar		=> tar file convert compress file
+	
+	# tar -tzf etc.tar.gz			=> to read compress file
+
+	# tar -xzf etc.tar.gz 			=> to convert compress file into tar file
+	----------
+	2. bzip2 (j) - .bz2
+	
+	# tar -cjf etc.tar.bz2 etc.tar		=> tar file convert compress file
+	
+	# tar -tjf etc.tar.bz2			=> to read compress file
+
+	# tar -xjf etc.tar.bz2			=> to convert compress file into tar file
+	-----------
+	3. xzip (J) - .xz
+
+	# tar -cJf etc.tar.xz etc.tar		=> tar file convert compress file
+	
+	# tar -tJf etc.tar.xz			=> to read compress file
+
+	# tar -xJf etc.tar.xz			=> to convert compress file into tar file
+	------------------------------------
+
+
+	We have separate compression tools : need tar file
+	1. gzip 
+	# gzip etc.tar			=> convert your original tar file into compress file
+	# gunzip etc.tar.gz 		=> gz to tar 
+
+	2. bzip2
+	# bzip2 etc.tar 		=> tar to bz2
+	# bunzip etc.tar.bz2		=> bz2 to tar
+
+	3. xzip
+	# xz etc.tar			=> tar to xz
+	# unxz etc.tar.xz		=> xz to tar
+
+
+===========================================================
+
+
+	6. Package tool/software Installation in Linux
+
+	Windows - .exe file - Application
+	android - .apk file 
+	Linux - Family
+		
+	Tool Types :
+	1. High Level Tool - Dependency		(Jenkins tool - Java)
+	2. Low Level Tool - No dependency tool 
+	
+
+	1. red hat - centos
+		A. Low - rpm - redhat package manager
+		B. High - yum/dnf - yellodog update modifier
+	
+	2. Debian - ubuntu
+		A. Low - dpkg - Debian package
+		B. High - apt - advance package tool
+----------------------------------------------------------
+	rpm is used to install LOW tools/packages/s/w
+
+	# rpm -qa 		=> list all installed tools
+
+	# rpm -q tool
+	# rpm -q java/python3/tree	=> give that tool info(version)
+
+	# rpm -evh tool
+	# rpm -evh tree 		=> to uninstall the package/tool
+
+	Steps to Download Package:
+	Google : tree package for centos 9 rpm
+		centos.pkg.org
+		Download Links
+		Copy - Binary rpm Link
+
+	Termial :
+		# wget Link(Paste)
+		Package downloaded in your machine
+
+	# rpm -ivh tree1.8....rpm	=> hi command jithe tumchi binary rpm download Zali 						tithe ch use karychi.
+
+-----------------------------------------------------
+	High & Low - Dependency 
+	
+	rpm - only low level tools
+	yum - High & low level tools
+
+
+	# yum/dnf install httpd/python3 	=> to install high/low level tools
+	
+	# yum/dnf list installed		=> list installed package/tool/s/w	
+	
+	# yum/dnf list installed | grep packagename		=> to search particular package
+
+	# yum/dnf remove httpd/tree		=> to remove installed package
+
+	# yumdownloader tree/httpd	=> to download package.	(ls karun poha)
+
+-----------------------------------------------------------------------
+	7. Creating Web server
+		1. apache - 
+			redhat /centos - httpd package, 
+			debian-ubuntu - apache package	
+		2. nginx
+	
+	1. apache-
+		# yum install httpd 	=> install httpd (apache server) package
+		Note: /var/www/html/ 	-> this dir create
+
+		# systemctl status httpd	=> check server status
+		# systemctl start httpd		=> start the server		
+		# systemctl enabled httpd	=> when computer restart httpd already start
+
+	2. Go at /var/www/html
+		create index.html
+
+		
+======================================================
+	2. nginx
+
+	# yum install nginx
+
+	# systemctl status nginx
+		    start
+
+
+	It will create new dir /etc/nginx
+	
+	Go there.
+
+	/etc/nginx
+
+	conf.d
+
+	Website setting : /etc/nginx/conf.d/
+
+	1. create file - vim website1.conf
+
+	Server block paste from Google
+-------------------------------
+
+server {
+    # Listen on port 80 for both IPv4 and IPv6
+    listen 80;
+    listen [::]:80;
+
+    # Define the domain names this block handles
+    server_name Rohit.local www.rohit.local;
+
+    # Point to the root directory where website files are stored
+    root /var/www/website1;
+
+    # Specify default files to serve in order of priority
+    index index.html index.htm;
+
+    # Handle standard URI routing
+    location / {
+        # Check for matching file, then directory; fallback to 404
+        try_files $uri $uri/ =404;
+    }
+
+    # Configure custom logging paths for easy troubleshooting
+    access_log /var/log/nginx/yourdomain.com.access.log;
+    error_log /var/log/nginx/yourdomain.com.error.log;
+}
+
+
+-------------------------------
+Save :wq
+	# nginx -t
+	# systemctl reload nginx
+
+---------------------------
+2.	Website code : 	     /var/www/website1/index.html
+				    /website2/index.html
+				    /website3/index.html
+
+	# chown -R nginx:nginx /var/www/website1
+
+	# chmod 755 /var/www/website1
+
+-----------------------------
+3.  vim /etc/hosts file open
+	127.0.0.1   Rohit.local  Aniket.local
+
+Save :wq
+
+--------------------
+4. Open browser :
+
+	Rohit.local 
+
+=====================================================================
+
+ Future task - Jobs
+
+daemon services - background - 
+1. at job    - short duration  - atd
+
+at 12:40
+
+at> mkdir demo 			=> create a demo dir at 12.40
+
+Ctrl+d 					=> to save job
+
+atq 					=> to list jobs
+
+atrm jobno				=> to remove job
+at -r jobno				=> remove job
+
+
+2. cron job  - long , regular , repeated jobs - crond
+
+crontab guru - website
+
+* * * * *  		every minute,every hour,every date,month,weekday
+
+0 * * * * 		on Every hour - 
+
+1 * * * * 		every hours first minute (pratek tasachya first min)
+
+30 12 * * *		every day on 12.30
+
+0 */2 * * *
+--------------------------
+
+* * * * * mkdir /root/8th/sample-$(date +\%Y-\%m-\%d-\%H-\%M-)
+=============================================================================
+    IP address
+	Window - cmd -> ipconfig - IPV4 address
+	--------------
+
+	Linux - terminal -> ifconfig - inet address
+	
+	10.0.2.15 	=> localhost
+	127.0.0.1	=> localhost
+	
+	-----------------------
+
+	VBox - setting -> Networks -> Adapter -> 
+	Bridge -> start Centos
+
+
+# systemctl status firewalld
+
+# systemctl start/stop/restart firewalld
+
+	# firewall-cmd --list-all	=> service & port details
+	# firewall-cmd --get-services	=> firewall aware services
+
+  # firewall-cmd --add-service=http  			=> add service
+  # firewall-cmd --add-service=http  --permanent
+
+  # firewall-cmd --add-port=80/tcp  			=> add port
+  # firewall-cmd --add-port=80/tcp  --permanent
+
+
+  # firewall-cmd --remove-service=http  			=> remove service
+  # firewall-cmd --remove-service=http  --permanent
+
+  # firewall-cmd --remove-port=80/tcp  			=> remove port
+  # firewall-cmd --remove-port=80/tcp  --permanent
+-----------------------------------------------
+
+	SSH - SECURE SHELL - ACCESS ONE COMPUTER/DEVICE FROM ANOTHER
+
+	WAY TO CONNECT
+
+	1. USING PASSWORD
+	
+	# ssh user@ipaddress
+	# ssh aniket@192.168.1.21
+
+	2. USING KEYS - Even password change, still we can connect/access another computer
+	Create key on client (Rohit machine)
+	# ssh-keygen
+	# ssh-copy-id aniket@192.168.1.21
+	# ssh aniket@192.168.1.21
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+	
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+	
+
+
+
+	
+
+
+
+	
+
+	
+
+
+
+
